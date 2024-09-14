@@ -4,7 +4,7 @@ https://github.com/batuafk/S0cket/blob/main/S0cket.py
 
 ![image](https://github.com/user-attachments/assets/28241f95-de9f-452f-98c5-b8fe2ca157a3)
 
-### Network Socket: A network socket is an endpoint for sending or receiving data across a computer network. It allows software applications to communicate with each other over a network, whether it's a local network or the internet.
+Network Socket: A network socket is an endpoint for sending or receiving data across a computer network. It allows software applications to communicate with each other over a network, whether it's a local network or the internet.
 
 ## Components of a Network Socket
 	IP Address: Identifies the networked device.

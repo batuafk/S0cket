@@ -1,6 +1,8 @@
-Network Socket: A network socket is an endpoint for sending or receiving data across a computer network. It allows software applications to communicate with each other over a network, whether it's a local network or the internet.
+# S0cket
 
-Components of a Network Socket
+## Network Socket: A network socket is an endpoint for sending or receiving data across a computer network. It allows software applications to communicate with each other over a network, whether it's a local network or the internet.
+
+## Components of a Network Socket
 	IP Address: Identifies the networked device.
 		IPv4: Consists of four octets separated by dots, e.g., 192.168.1.1.
 		IPv6: Uses a longer format with hexadecimal digits separated by colons, e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334.
@@ -10,7 +12,7 @@ Components of a Network Socket
 		Dynamic/Private Ports: 49152 to 65535 (used for ephemeral ports assigned temporarily for client-side connections).
 	Protocol: Defines the rules for data transmission, such as TCP (Transmission Control Protocol) or UDP (User Datagram Protocol).
 
-Layers and protocols:
+## Layers and protocols:
 	Layer 1 (Physical):
 	Ethernet (Wired network technology using frames to transmit data)
 	Fiber Optic (Uses light to transmit data over long distances)

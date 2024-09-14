@@ -1,3 +1,5 @@
+# Socket
+
 Network Socket: In computing, this is an endpoint for sending or receiving data across a computer network. It’s often used in programming to enable communication between applications over a network.
 
 Components of a Network Socket

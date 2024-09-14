@@ -1,5 +1,7 @@
 # S0cket
 
+![image](https://github.com/user-attachments/assets/a0157245-c697-4b6a-89c3-d87552473e82)
+
 ## Network Socket: A network socket is an endpoint for sending or receiving data across a computer network. It allows software applications to communicate with each other over a network, whether it's a local network or the internet.
 
 ## Components of a Network Socket

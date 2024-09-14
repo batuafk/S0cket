@@ -1,6 +1,4 @@
-# Socket
-
-Network Socket: In computing, this is an endpoint for sending or receiving data across a computer network. It’s often used in programming to enable communication between applications over a network.
+Network Socket: A network socket is an endpoint for sending or receiving data across a computer network. It allows software applications to communicate with each other over a network, whether it's a local network or the internet.
 
 Components of a Network Socket
 	IP Address: Identifies the networked device.
@@ -12,123 +10,92 @@ Components of a Network Socket
 		Dynamic/Private Ports: 49152 to 65535 (used for ephemeral ports assigned temporarily for client-side connections).
 	Protocol: Defines the rules for data transmission, such as TCP (Transmission Control Protocol) or UDP (User Datagram Protocol).
 
-Stream Sockets (TCP):
-	Use the Transmission Control Protocol (TCP) to provide a reliable, connection-oriented communication channel.
-	Ensure that data is delivered in the correct order and without errors.
-	Suitable for applications requiring guaranteed delivery.
-		Web browsers (HTTP/HTTPS)
-		Email (SMTP, IMAP, POP3)
-		File transfers (FTP)
-
-Datagram Sockets (UDP):
-	Use the User Datagram Protocol (UDP) for connectionless communication.
-	Data is sent without establishing a connection, and there is no guarantee of delivery or order.
-	Suitable for applications where speed is crucial and occasional data loss is acceptable.
-		Streaming media (video/audio)
-		Online games
-		DNS queries
-		
-		
-Network protocols categories:
-Web and Internet Protocols
-Email Protocols
-File Transfer Protocols
-Network Management and Routing
-Remote Access and Management
-Network Configuration and Discovery
-Security and Encryption
-Time and Synchronization
-Streaming and Real-Time Communication
-Database Protocols
-Peer-to-Peer and File Sharing
-Tunneling and VPN
-Multicast and Broadcast
-Miscellaneous
-Application Protocols
-Network File Systems
-Directory Services
-Authentication and Authorization
-Voice over IP (VoIP)
-Messaging Protocols
-Streaming Media Protocols
-Remote Procedure Call (RPC)
-Network Time Protocols
-Dynamic Host Configuration Protocol (DHCP)
-Label Switching
-Network Discovery Protocols
-Network Diagnostics and Testing
-Routing Protocols
-Service Discovery Protocols
-Real-Time Transport Protocols
-Internet Control Protocols
-Peer-to-Peer Protocols
-Data Transfer Protocols
-Secure Communication Protocols
-Network Access Control
-Wireless Protocols
-Integrated Services Digital Network (ISDN)
-Quality of Service (QoS) Protocols
-Multimedia Protocols
-Session Management Protocols
-Data Encryption Protocols
-Telecommunications Protocols
-Network Address Translation (NAT)
-Application Layer Protocols
-Traffic Management Protocols
-Content Delivery Network (CDN) Protocols
-Virtual Private Network (VPN) Protocols
-Streaming Protocols
-Service Management Protocols
-Emerging Protocols
-
-Network protocols:
-HTTP (HyperText Transfer Protocol) - Web browsing
-HTTPS (HTTP Secure) - Secure web browsing
-DNS (Domain Name System) - Domain name resolution
-SMTP (Simple Mail Transfer Protocol) - Email sending
-FTP (File Transfer Protocol) - File transfers
-IMAP (Internet Message Access Protocol) - Email retrieval
-POP3 (Post Office Protocol 3) - Email retrieval
-SSH (Secure Shell) - Secure remote access
-TCP (Transmission Control Protocol) - Connection-oriented communication
-UDP (User Datagram Protocol) - Connectionless communication
-RDP (Remote Desktop Protocol) - Remote desktop access
-SNMP (Simple Network Management Protocol) - Network management
-SFTP (SSH File Transfer Protocol) - Secure file transfers
-Telnet - Remote command-line access
-NTP (Network Time Protocol) - Time synchronization
-HTTP/2 (HyperText Transfer Protocol version 2) - Improved web browsing
-DHCP (Dynamic Host Configuration Protocol) - IP address allocation
-LDAP (Lightweight Directory Access Protocol) - Directory services
-RTP (Real-Time Transport Protocol) - Streaming media
-RTCP (Real-Time Control Protocol) - Control protocol for RTP
-SIP (Session Initiation Protocol) - VoIP signaling
-BGP (Border Gateway Protocol) - Internet routing
-ICMP (Internet Control Message Protocol) - Network diagnostics
-NFS (Network File System) - File sharing
-TFTP (Trivial File Transfer Protocol) - Simple file transfers
-QUIC (Quick UDP Internet Connections) - Fast, secure connections
-MSSQL (Microsoft SQL Server) - Database access
-PostgreSQL - Database access
-MySQL - Database access
-FTPES (FTP Explicit TLS/SSL) - Secure file transfers
-L2TP (Layer 2 Tunneling Protocol) - VPNs
-PPPoE (Point-to-Point Protocol over Ethernet) - DSL connections
-GTP (GPRS Tunneling Protocol) - Mobile data transport
-IPSec (Internet Protocol Security) - Secure network communication
-XMPP (Extensible Messaging and Presence Protocol) - Instant messaging
-Wi-Fi (Wireless Fidelity) - Wireless networking
-UPnP (Universal Plug and Play) - Device discovery
-IGMP (Internet Group Management Protocol) - Multicast group management
-SSDP (Simple Service Discovery Protocol) - Device discovery
-MPLS (Multiprotocol Label Switching) - Data packet routing
-RADIUS (Remote Authentication Dial-In User Service) - Network access control
-Diameter - Advanced RADIUS replacement
-SCTP (Stream Control Transmission Protocol) - Reliable, message-oriented communication
-Kerberos - Network authentication
-Z39.50 - Library search and retrieval
-EIGRP (Enhanced Interior Gateway Routing Protocol) - Network routing
-OSPF (Open Shortest Path First) - Network routing
-VNC (Virtual Network Computing) - Remote desktop access
-Bittorrent - Peer-to-peer file sharing
-Gopher - Early text-based Internet browsing
+Layers and protocols:
+	Layer 1 (Physical):
+	Ethernet (Wired network technology using frames to transmit data)
+	Fiber Optic (Uses light to transmit data over long distances)
+	DSL (Digital Subscriber Line, uses phone lines for internet)
+	Wi-Fi (Wireless technology for local area networking)
+	Coaxial Cable (Cable used for internet and TV signals)
+	Bluetooth (Short-range wireless communication for devices)
+	Infrared (Wireless communication using infrared light)
+	Serial (RS-232) (Standard for serial communication between devices)
+	ISDN (Integrated Services Digital Network, digital phone lines)
+	Powerline Communication (Uses electrical wiring to transmit data)
+	
+	Layer 2 (Data Link):
+	Ethernet (Wired LAN technology, handles data frames)
+	Wi-Fi (Wireless LAN technology, handles data frames)
+	PPP (Point-to-Point Protocol, used for direct connections)
+	ARP (Address Resolution Protocol, maps IP addresses to MAC addresses)
+	VLAN (Virtual LAN, segments network into different logical networks)
+	Frame Relay (Wide area network technology for data transmission)
+	HDLC (High-Level Data Link Control, encapsulates data frames)
+	MPLS (Multiprotocol Label Switching, directs data based on labels)
+	ATM (Asynchronous Transfer Mode, cell-based data transmission)
+	L2TP (Layer 2 Tunneling Protocol, tunnels data for VPNs)
+	
+	Layer 3 (Network):
+	IP (Internet Protocol) (Primary protocol for routing data across networks)
+	ICMP (Internet Control Message Protocol, handles errors and network diagnostics)
+	IPv6 (Next-generation IP protocol with a larger address space)
+	OSPF (Open Shortest Path First, internal network routing protocol)
+	BGP (Border Gateway Protocol, external network routing protocol)
+	RIP (Routing Information Protocol, simpler internal network routing)
+	EIGRP (Enhanced Interior Gateway Routing Protocol, advanced routing protocol)
+	IS-IS (Intermediate System to Intermediate System, routing protocol for large networks)
+	NAT (Network Address Translation, maps private IP addresses to public ones)
+	IGMP (Internet Group Management Protocol, manages multicast groups)
+	
+	Layer 4 (Transport):
+	TCP (Transmission Control Protocol) (Reliable, connection-oriented protocol)
+	UDP (User Datagram Protocol) (Fast, connectionless protocol)
+	SCTP (Stream Control Transmission Protocol, handles multiple streams)
+	DCCP (Datagram Congestion Control Protocol, manages congestion control)
+	QUIC (Quick UDP Internet Connections, improves web performance)
+	RUDP (Reliable User Datagram Protocol, adds reliability to UDP)
+	MPTCP (Multipath TCP, allows multiple network paths for a connection)
+	RSVP (Resource Reservation Protocol, reserves resources for data flows)
+	SPX (Sequenced Packet Exchange, used in Novell NetWare)
+	SCTP (Stream Control Transmission Protocol, provides multi-streaming and reliability)
+	
+	Layer 5 (Session):
+	HTTP (Hypertext Transfer Protocol, used for web browsing)
+	SMB (Server Message Block) (File sharing and network communication protocol)
+	NetBIOS (Network Basic Input/Output System, provides network services)
+	RPC (Remote Procedure Call) (Executes programs on remote servers)
+	SIP (Session Initiation Protocol) (Manages multimedia communication sessions)
+	PPTP (Point-to-Point Tunneling Protocol) (VPN protocol for secure connections)
+	LDAP (Lightweight Directory Access Protocol) (Accesses directory services)
+	NFS (Network File System) (File sharing across networks)
+	H.323 (Protocol for multimedia communication over networks)
+	RDP (Remote Desktop Protocol) (Allows remote desktop access)
+	
+	Layer 6 (Presentation):
+	SSL/TLS (Secure Sockets Layer/Transport Layer Security) (Encrypts data for secure communication)
+	JPEG (Image format with lossy compression)
+	PNG (Image format with lossless compression)
+	GIF (Image format supporting animations)
+	MPEG (Video compression standard)
+	ASN.1 (Abstract Syntax Notation One) (Data format for representing structured data)
+	XML (eXtensible Markup Language) (Markup language for data representation)
+	JSON (JavaScript Object Notation) (Lightweight data interchange format)
+	Base64 (Encoding scheme for binary data in text format)
+	XDR (External Data Representation) (Standard for data serialization)
+	
+	Layer 7 (Application):
+	HTTP (Hypertext Transfer Protocol) (Foundation of web communication)
+	DNS (Domain Name System) (Translates domain names to IP addresses)
+	FTP (File Transfer Protocol) (Transfers files between systems)
+	SMTP (Simple Mail Transfer Protocol) (Sends email)
+	IMAP (Internet Message Access Protocol) (Retrieves and manages email)
+	POP3 (Post Office Protocol 3) (Retrieves email from servers)
+	SNMP (Simple Network Management Protocol) (Manages network devices)
+	Telnet (Remote command-line interface)
+	LDAP (Lightweight Directory Access Protocol) (Accesses and manages directory information)
+	NTP (Network Time Protocol) (Synchronizes clocks over a network)
+	SFTP (SSH File Transfer Protocol) (Securely transfers files over SSH)
+	HTTPS (HTTP Secure) (Secure version of HTTP using SSL/TLS)
+	DHCP (Dynamic Host Configuration Protocol) (Automatically assigns IP addresses)
+	TFTP (Trivial File Transfer Protocol) (Simple file transfer protocol)
+	RADIUS (Remote Authentication Dial-In User Service) (Manages network access authentication)

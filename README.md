@@ -7,7 +7,7 @@ https://github.com/batuafk/S0cket/blob/main/S0cket.py
 Network Socket: A network socket is an endpoint for sending or receiving data across a computer network. It allows software applications to communicate with each other over a network, whether it's a local network or the internet.
 
 ## Components of a Network Socket
-> IP Address: Identifies the networked device.
+	IP Address: Identifies the networked device.
 		IPv4: Consists of four octets separated by dots, e.g., 192.168.1.1.
 		IPv6: Uses a longer format with hexadecimal digits separated by colons, e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334.
 	Port Number: Identifies the specific application or service on the device.

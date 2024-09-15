@@ -106,3 +106,4 @@ A network socket is an endpoint for sending or receiving data across a computer 
 	DHCP (Dynamic Host Configuration Protocol) (Automatically assigns IP addresses)
 	TFTP (Trivial File Transfer Protocol) (Simple file transfer protocol)
 	RADIUS (Remote Authentication Dial-In User Service) (Manages network access authentication)
+	SSH (Secure Shell) (Encrypted remote command-line interface for secure system administration)
